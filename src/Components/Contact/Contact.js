@@ -1,9 +1,9 @@
 import emailjs from '@emailjs/browser'
 import { useRef } from 'react';
-import Logo from '../../assets/logo1.jpg'
-import Loader from 'react-loaders'
+
+
 import AnimatedLetters from '../AnimatedLetters';
-import './index.scss'
+// import './Contact.scss'
 import { useState, useEffect } from 'react';
 
 const Contact =() => {
@@ -41,7 +41,7 @@ const Contact =() => {
 
   return (
     <>
-      <div className="container contact-page">
+      <div id="contact" className="container contain">
         <div className='text-zone'>
           <h1>
             <AnimatedLetters
@@ -86,13 +86,7 @@ const Contact =() => {
           Lugbe,  Kapwa <br />
           <span>el90dorado100@gmail.com</span>
         </div>
-        <div className='map-rp'>
-          <div className='log-container'>
-            <img className='logo' src={Logo} alt="logo" />
-          </div>
         </div>
-      </div>
-      <Loader type='pacman' />
     </>
   )
 }

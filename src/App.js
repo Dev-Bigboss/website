@@ -1,23 +1,25 @@
-import { Routes, Route } from 'react-router-dom';
+import Layout from './Components/Navbar.js';
+
+import Home from './Components/Home.js';
 import './App.scss';
-import Layout from './Components/Layout';
-import Home from './Components/Home';
-import About from './Components/About';
-import Contact from './Components/Contact';
+import Projects from './Components/Projects.js';
+import About from './Components/About.js';
+import Skills from './Components/Skills/Skill';
+import Contact from './Components/Contact/Contact';
+
+
 
 function App() {
   return (
     <>
-      <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="contact" element={<Contact />} />
-      </Route>
-      </Routes>
-    </>
-  );
+      <Layout />
+      <Home />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+    </>  
+    );
 }
 
 export default App;
-

@@ -13,7 +13,7 @@ function Layout() {
     <Navbar collapseOnSelect expand="lg" style={{backgroundColor: "#071740", position: "sticky"}} variant="dark" fixed="top">
    
   <Container>
-  <Navbar.Brand href="/"> <img className='image' src= {logo} alt="logo" /></Navbar.Brand>
+  <Navbar.Brand href="#"> <img className='image' src= {logo} alt="logo" /></Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto " >

@@ -1,9 +1,6 @@
 import emailjs from '@emailjs/browser'
 import { useRef } from 'react';
-
-
 import AnimatedLetters from '../AnimatedLetters';
-// import './Contact.scss'
 import { useState, useEffect } from 'react';
 
 const Contact =() => {
@@ -16,27 +13,27 @@ const Contact =() => {
     return setLetterClass('text-animate-hover')
    }, 3000)
  }, [])
-  const refForm = useRef()
-  const sendEmail = (e) => {
-    e.preventDefault()
+ const refForm = useRef()
+ const sendEmail = (e) => {
+   e.preventDefault()
 
-    emailjs
-      .sendForm(
-        'service_37zc9lp',
-        'template_dvplulr',
-        refForm.current,
-        'YK9m4_Wa9K_UdNyyX'
-      )
-      .then(
-        () => {
-          alert('Message successfully sent!')
-          window.location.reload(false)
-        },
-        () => {
-          alert('Failed to send message, please try again')
-        }
-      )
-  }
+   emailjs
+     .sendForm(
+       'service_37zc9lp',
+       'template_dvplulr',
+       refForm.current,
+       'YK9m4_Wa9K_UdNyyX'
+     )
+     .then(
+       () => {
+         alert('Message successfully sent!')
+         window.location.reload(false)
+       },
+       () => {
+         alert('Failed to send message, please try again')
+       }
+     )
+ }
 
 
   return (

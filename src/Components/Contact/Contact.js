@@ -67,12 +67,13 @@ const Contact =() => {
                   Message' name='message' required></textarea>
                 </li>
                 <li>
-                  <input type="submit" className='flat-button' />
+                  <input type="submit" className='flat-button-submit' />
                 </li>
               </ul>
             </form>
           </div>
         </div>
+        <br />
         <div className='info-map'>
           Sherifdeen Adeleke,
           <br />
